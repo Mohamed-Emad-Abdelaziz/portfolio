@@ -54,7 +54,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between; /* spread for hamburger */
   padding: 0.5rem;
 }
 
@@ -78,6 +78,7 @@ body {
 }
 
 .info {
+  margin-right: auto; /* ensures .menu-toggle stays right */
   text-align: center;
 }
 
@@ -87,7 +88,6 @@ body {
   font-weight: 600;
 }
 
-/* Specialty under the name */
 .specialty {
   margin-bottom: 0.15rem;
   color: #ccc;
@@ -100,17 +100,34 @@ body {
   font-size: 0.85rem;
 }
 
-/* Navbar: smaller */
+/* HAMBURGER BUTTON (mobile) */
+.menu-toggle {
+  display: none;
+  margin-left: 1rem;
+  color: var(--text-color);
+  cursor: pointer; 
+  font-size: 1.4rem;
+}
+
+/* 
+  NAVBAR is always displayed on large screens,
+  collapses for small screens.
+*/
 .navbar {
-  display: flex;
-  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  /* On large screens, we want the navbar always visible.
+     On small screens, we hide/show by toggling max-height in JS. */
+  max-height: none; /* default for large screens */
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  transition: max-height 0.3s ease;
 }
 
 .navbar ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 0.3rem 0.5rem;
   margin: 0 auto;
   list-style: none;
@@ -145,6 +162,7 @@ body {
   color: var(--primary-color);
 }
 
+/* MAIN SECTIONS */
 .section {
   max-width: 1100px;
   padding: 2rem 1rem;
@@ -171,7 +189,7 @@ body {
   content: "";
 }
 
-/* Cards for projects, problems, etc. */
+/* CARDS */
 .card {
   padding: 1.2rem;
   margin-bottom: 1.5rem;
@@ -269,25 +287,25 @@ body {
   transform: translateY(-2px);
 }
 
-/* Responsive */
+/* ========== RESPONSIVE: MOBILE ========== */
 @media (max-width: 768px) {
+
   .header-content {
-    flex-direction: column;
-    text-align: center;
+    justify-content: flex-start; 
   }
 
-  .profile-pic {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
+  /* Show the hamburger, hide the nav by default  */
+  .menu-toggle {
+    display: block;
   }
-
+  
+  /* By default on small screens, set max-height to 0 (collapsed).
+     We'll expand it with JS if the user taps the hamburger. */
+  .navbar {
+    max-height: 0;
+  }
+  
   .navbar ul {
-    align-items: center;
     flex-direction: column;
-  }
-
-  .navbar li a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
   }
 }

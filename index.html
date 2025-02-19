@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohamed Emad - Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  />
+
+  <!-- Three.js (CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- THREE.JS BACKGROUND CANVAS -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- STICKY HEADER -->
+  <header class="sticky-header">
+    <div class="header-content">
+      <div class="profile-pic">
+        <img src="images/profile.jpg" alt="Profile Photo" />
+      </div>
+      <div class="info">
+        <h1 class="name">Mohamed Emad Eldin Abdelaziz</h1>
+        <h3 class="specialty">Data Analyst</h3>
+        <p class="email">mmm3emad@gmail.com</p>
+      </div>
+      <!-- HAMBURGER MENU BUTTON (hidden on large screens) -->
+      <div class="menu-toggle" id="menuToggle">
+        &#9776; <!-- "☰" icon -->
+      </div>
+    </div>
+    
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#problems">Problems</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#soft-skills">Soft Skills</a></li>
+        <li><a href="#personal-info">Personal Info</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <!-- Project #1 -->
+      <div class="card">
+        <h3>3D Visualization - Solar System</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/LXzmq9J2SwQ?si=NAGJRA1SE5H07SVK"
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/YourUsername/AnotherProject" class="link-primary" target="_blank">
+          View GitHub Repo
+        </a>
+      </div>
+
+      <!-- Project #2 -->
+      <div class="card">
+        <h3>Machine Learning - Color Correction Using Deep Learning</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/4gIZy2HAins?si=ABkQoPWWvL_2oJOh" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/YourUsername/AnotherProject" class="link-primary" target="_blank">
+          View GitHub Repo
+        </a>
+      </div>
+
+      <!-- Project #3 -->
+      <div class="card">
+        <h3>Image Processing - Algorithms</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/aBqtXQNTi6w?si=GuBFer_usOoQC2-G" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/Mohamed-Emad-Abdelaziz/Image-Processing-Algorithms.git" 
+           class="link-primary" 
+           target="_blank"
+        >
+          View GitHub Repo
+        </a>
+      </div>
+
+      <!-- Project #4 -->
+      <div class="card">
+        <h3>Unity - Angry Birds</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/K_LMxEEsK54?si=4YFQFZttsdcduqHu"
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/YourUsername/YourProject" class="link-primary" target="_blank">
+          View GitHub Repo
+        </a>
+      </div>
+
+      <!-- Project #5 -->
+      <div class="card">
+        <h3>Unity - Ping Pong</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/8gAAG3KK8g4?si=VV9nSA0Vl3DWGDaS" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/YourUsername/AnotherProject" class="link-primary" target="_blank">
+          View GitHub Repo
+        </a>
+      </div>
+
+      <!-- Project #6 -->
+      <div class="card">
+        <h3>Robotics - Obstacle Avoidance & Ultrasonic Navigation</h3>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/yIGygcGFuk0?si=At_yyKVB9VLoGFnN"
+            title="YouTube video player" 
+            frameborder="0" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <a href="https://github.com/Mohamed-Emad-Abdelaziz/Robotics-Obstacle-Avoidance-Robot-Ultrasonic-Navigation.git" 
+           class="link-primary" 
+           target="_blank"
+        >
+          View GitHub Repo
+        </a>
+      </div>
+    </section>
+
+    <!-- PROBLEMS SECTION -->
+    <section id="problems" class="section">
+      <h2>Problems</h2>
+      <!-- Problem #1 -->
+      <div class="card">
+        <h3>Problem Title 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget tortor a felis 
+          fermentum aliquet at sit amet nunc. (Replace with the actual problem statement.)
+        </p>
+        <a href="https://github.com/YourUsername/Problem1" class="link-primary" target="_blank">
+          View Solution Repo
+        </a>
+      </div>
+
+      <!-- Problem #2 -->
+      <div class="card">
+        <h3>Problem Title 2</h3>
+        <p>
+          Another example problem statement goes here. Add the relevant details. 
+          (Replace this with the real problem.)
+        </p>
+        <a href="https://github.com/YourUsername/Problem2" class="link-primary" target="_blank">
+          View Solution Repo
+        </a>
+      </div>
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="section">
+      <h2>Courses</h2>
+      <!-- Course #1 -->
+      <div class="card">
+        <h3>Course Title 1</h3>
+        <p>Date of Study: January 2023</p>
+        <a href="PowerPointLink1.pptx" class="link-primary" target="_blank">View Course PowerPoint</a>
+      </div>
+
+      <!-- Course #2 -->
+      <div class="card">
+        <h3>Course Title 2</h3>
+        <p>Date of Study: March 2023</p>
+        <a href="PowerPointLink2.pptx" class="link-primary" target="_blank">View Course PowerPoint</a>
+      </div>
+    </section>
+
+    <!-- SOFT SKILLS SECTION -->
+    <section id="soft-skills" class="section">
+      <h2>Soft Skills</h2>
+      <ul class="skills-list">
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Problem-Solving</li>
+        <li>Time Management</li>
+        <li>Leadership</li>
+      </ul>
+    </section>
+
+    <!-- PERSONAL INFO SECTION -->
+    <section id="personal-info" class="section">
+      <h2>Personal Information</h2>
+      <div class="personal-table">
+        <table>
+          <tr>
+            <th>Family Name</th>
+            <td>Abdelaziz</td>
+          </tr>
+          <tr>
+            <th>First Name</th>
+            <td>Mohamed</td>
+          </tr>
+          <tr>
+            <th>Given Name</th>
+            <td>Mohamed</td>
+          </tr>
+          <tr>
+            <th>Nationality</th>
+            <td>Egyptian</td>
+          </tr>
+          <tr>
+            <th>Date of birth</th>
+            <td>22 November 2001</td>
+          </tr>
+          <tr>
+            <th>Place of birth</th>
+            <td>Mansoura</td>
+          </tr>
+          <tr>
+            <th>Emails</th>
+            <td>
+              mmm3emad@gmail.com <br/>
+              mohamed.emadeldinn1@msa.edu.eg
+            </td>
+          </tr>
+          <tr>
+            <th>Web site</th>
+            <td><a href="https://example.com" target="_blank">Click Here</a></td>
+          </tr>
+          <tr>
+            <th>Marital Status</th>
+            <td>Single</td>
+          </tr>
+          <tr>
+            <th>Religion</th>
+            <td>Muslim</td>
+          </tr>
+          <tr>
+            <th>Education</th>
+            <td>
+              <strong>High School:</strong> future 15 <br/>
+              <strong>BSc:</strong> Faculty of Computers and Information Science – MSA University, July 2024
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates" class="section">
+      <h2>Certificates</h2>
+
+      <div class="card">
+        <h3>Git and GitHub</h3>
+        <a 
+          href="https://drive.google.com/file/d/13-mZAKQulkC-QJkmJOX2U1yEo8OL14K3/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Data Fabric Event Streams Essentials</h3>
+        <a 
+          href="https://drive.google.com/file/d/10IzpQQBESgBm3_wPZrQrCiHs5sAVHoU7/view?usp=sharing" 
+          class="btn-certificate" 
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>HPE Ezmeral Data Fabric Fundamentals</h3>
+        <a 
+          href="https://drive.google.com/file/d/1LbywYgdwZZBHQOgldIWcC_wgT3Waum-S/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>What are Mirrors?</h3>
+        <a 
+          href="https://drive.google.com/file/d/1fbqVqOkobykRW3PU3F0yjpQpw3NxkD0z/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Intro to Artificial Intelligence and Machine Learning</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>HPE Ezmeral Data Fabric Tables</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Securing the HPE Ezmeral Data Fabric</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>What are Volumes?</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Hackathon</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Introduction to Python Training</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>HCIA-AI V3.5</h3>
+        <a 
+          href="https://drive.google.com/file/d/1AaXptmG5e2uh7rYCOqvNt27oEuCKNFaE/view?usp=sharing" 
+          class="btn-certificate"
+          target="_blank"
+        >
+          View Certificate
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
